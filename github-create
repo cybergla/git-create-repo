@@ -1,0 +1,6 @@
+#!/bin/bash
+
+uname=$1
+rname=$2
+
+curl -u $uname https://api.github.com/user/repos -d '{"name":"'$rname'"}'
